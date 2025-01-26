@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.design-body {
+    background-color: lightblue;
+}
+
+.design {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.design-navbar {
+    list-style: none;
+    display: flex; 
+}
+
+.design-navbar li {
+    padding: 0px 20px;
+}
+
+.design-navbar li a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(82, 113, 141);
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}

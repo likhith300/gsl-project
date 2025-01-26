@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sign up page</title>
+</head>
+<body>
+    <div class="sign-upbox">
+        <center> <h1>Sign Up</h1></center>
+        <h4>It's free and takes only a minute to sign up</h4>
+        <form>
+            <label>First Name</label>
+            <input type="text" placeholder="Enter Your name.." required><br><br>
+            <label>Last Name</label>
+            <input type="text" placeholder="Last name"><br><br>
+            <label>Email</label>
+            <input type="text" placeholder="Enter email.."><br><br>
+            <label>Password</label>
+            <input type="password" placeholder="Create password"><br><br>
+            <center><button>Submit</button></center>
+        </form>        
+        
+        <p>By clicking the sign-up button, you agree to our</p>
+        <center><a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></center>
+        <p class="para2">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+</body>
+<script>
+    function storeUserData(event) {
+        event.preventDefault(); 
+        const firstName = document.getElementById("firstName").value;
+        const lastName = document.getElementById("lastName").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+     
+        localStorage.setItem("firstName", firstName);
+        localStorage.setItem("lastName", lastName);
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+
+        window.location.href = "login.html";
+    }
+</script>
+
+</html>
